@@ -1,0 +1,38 @@
+.contenedorGenFooter{
+    transition: all 0.3s ease-in !important;
+}
+
+.tituloFooter{
+    color: #1A96DA;
+    font-weight:500;
+}
+
+.imgFooter{
+    border-radius: 24px;
+}
+
+.linksFooter{
+    color: #132C4A;
+    transition: all 0.3s ease-in-out !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.linksFooter:hover{
+    border-bottom: 1px solid #132C4A;
+}
+
+.linksFooterW{
+    color: #f1f1f1;
+    transition: all 0.3s ease-in-out !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.linksFooterW:hover{
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.color-font li{
+    font-size: 0.9rem;
+}

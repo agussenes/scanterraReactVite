@@ -1,0 +1,18 @@
+El Front se creo usando: 
+    - # Crear carpeta contenedora del front 
+    - npm create vite@latest front -- --template react
+
+    - # UI + estilos
+    npm i react-bootstrap bootstrap bootstrap-icons
+
+    - # Router
+    npm i react-router-dom
+
+    - # Swiper
+    npm i swiper
+
+    - # SEO para SPA (manteniendo compatibilidad SSR/streaming)
+    npm i @dr.pogodin/react-helmet
+
+    - # Animaciones (CSS + on-scroll)
+    npm i animate.css aos

@@ -1,0 +1,62 @@
+:root {
+  --font-sans: 'Lato', sans-serif;
+  --scroll-thumb: #132C4A;
+  --scroll-track: #132C4A1A;
+}
+
+html, body, button, input, select, textarea {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  line-height: 1.25;
+}
+
+* {
+  scrollbar-width: thin;                     
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0f233b; 
+}
+
+.header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1030; 
+  background: #fff;    
+}
+
+
+/* background custom  */
+
+
+.bg-custom{
+  background-color: #132C4A ;
+}
+
+.bg-custom-2 {background-color: #EAF6FE;}
+
+.bg-custom-3{
+  background-color:#DFF2FE ;
+}
+
+.color-font{
+  color: #132C4A;
+}

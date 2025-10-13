@@ -1,0 +1,27 @@
+Para og-default.jpg, las dimensiones ideales para SEO y redes sociales son 1200 x 630 píxeles. 
+Este tamaño, con una relación de aspecto de 1.91:1, es el recomendado para evitar el recorte en las 
+vistas previas y garantiza que la imagen se vea bien en plataformas como Facebook, LinkedIn, y otras, 
+además de ser optimizado para la carga rápida. 
+
+Ejemplo de uso en las vistas
+ Home : 
+ 
+ <Seo
+        title="Inicio"
+        description="Bienvenido a mi sitio con soluciones web modernas."
+        path="/"
+        image="/og-home.jpg"
+        imageAlt="Banner de Home"
+        type="website"
+        jsonld={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Mi Sitio",
+          "url": "https://tu-dominio.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://tu-dominio.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }}
+      />
