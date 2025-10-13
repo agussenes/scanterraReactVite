@@ -1,9 +1,24 @@
 import { Link, NavLink } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import LanguageSwitcher from "../utils/LanguageSwitcher";
+
+import { useSearch } from "../search/SearchProvider";
+
 import "./Header.css";
 
 export default function Header() {
+
+  const { setOpen } = useSearch();
+
+  function cerrarMenu() {
+    const menu = document.getElementById('navbarContenido');
+    if (menu.classList.contains('show')) {
+      const collapse = new window.bootstrap.Collapse(menu, {
+        toggle: false
+      });
+      collapse.hide();
+    }
+  }
   return (
     <header className="header border-bottom">
       <nav className="container-fluid p-0">
@@ -26,7 +41,7 @@ export default function Header() {
         <div className="container-fluid bloque-2 bg-custom-2">
           <div className="container d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between  gap-3 text-center text-sm-start">
             <div className="d-flex align-items-center justify-content-center">
-              <Link to="/">
+              <Link to="/" onClick={cerrarMenu}>
                 <img src="/img/logo.webp" alt="Scanterra - Soluciones Satelitales Aplicadas" loading="lazy" className="logo-scanterra" />
               </Link>
             </div>
@@ -59,46 +74,46 @@ export default function Header() {
                 {/* Links izquierda */}
                 <Nav className="me-auto">
                   <NavDropdown title="Soluciones" id="dd-soluciones" >
-                    <NavDropdown.Item as={NavLink} to="/servicios/agroindustria">
+                    <NavDropdown.Item as={NavLink} to="/servicios/agroindustria" onClick={cerrarMenu}>
                       Agroindustria
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/mineria">
+                    <NavDropdown.Item as={NavLink} to="/servicios/mineria" onClick={cerrarMenu}>
                       Minería
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/energia">
+                    <NavDropdown.Item as={NavLink} to="/servicios/energia" onClick={cerrarMenu}>
                       Energía
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/defensa">
+                    <NavDropdown.Item as={NavLink} to="/servicios/defensa" onClick={cerrarMenu}>
                       Defensa y Seguridad
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/maritimo">
+                    <NavDropdown.Item as={NavLink} to="/servicios/maritimo" onClick={cerrarMenu}>
                       Dominio Marítimo
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/gobierno">
+                    <NavDropdown.Item as={NavLink} to="/servicios/gobierno" onClick={cerrarMenu}>
                       Gobierno
                     </NavDropdown.Item>
                   </NavDropdown>
 
-                  <Nav.Link as={NavLink} to="/tecnologia">
+                  <Nav.Link as={NavLink} to="/tecnologia" onClick={cerrarMenu}>
                     Tecnología
                   </Nav.Link>
 
                   <NavDropdown title="Novedades" id="dd-novedades">
-                    <NavDropdown.Item as={NavLink} to="/novedades/publicaciones">
+                    <NavDropdown.Item as={NavLink} to="/novedades/publicaciones" onClick={cerrarMenu}>
                       Publicaciones
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/novedades/actividades">
+                    <NavDropdown.Item as={NavLink} to="/novedades/actividades" onClick={cerrarMenu}>
                       Actividades
                     </NavDropdown.Item>
                   </NavDropdown>
 
-                  <Nav.Link as={NavLink} to="/proyectos">
+                  <Nav.Link as={NavLink} to="/proyectos" onClick={cerrarMenu}>
                     Casos de éxito
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/nosotros">
+                  <Nav.Link as={NavLink} to="/nosotros" onClick={cerrarMenu}>
                     Nosotros
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/contacto">
+                  <Nav.Link as={NavLink} to="/contacto" onClick={cerrarMenu}>
                     Contacto
                   </Nav.Link>
                 </Nav>
@@ -106,7 +121,7 @@ export default function Header() {
               {/* Acciones derecha */}
               <div className="d-flex align-items-center gap-3 ms-lg-3">
                 <div className="contenedorBusqueda">
-                  <button type="button" className="btn-search" onClick={() => { }}>
+                  <button type="button" className="btn-search" onClick={() => setOpen(true)}>
                     <i className="bi bi-search" />
                   </button>
                 </div>

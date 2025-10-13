@@ -5,6 +5,11 @@ import GoogleTranslate from "./components/shareds/utils/GoogleTranslate.jsx";
 
 import Header from "./components/shareds/header/Header.jsx";
 import Footer from "./components/shareds/footer/Footer.jsx";
+import WhatsAppFloating from "./components/utils/whatsapp/WhatsAppFloating.jsx";
+import ScrollToTop from "./components/utils/ScrollToTop.jsx";
+
+import SearchProvider from "./components/shareds/search/SearchProvider.jsx";
+import FullscreenSearch from "./components/shareds/search/FullscreenSearch.jsx";
 
 import './App.css'
 
@@ -47,18 +52,20 @@ function App() {
         {site.twitterUser && <meta name="twitter:site" content={site.twitterUser} />}
       </Helmet>
       <GoogleTranslate />
-
+      <ScrollToTop />
       <div className="d-flex flex-column min-vh-100">
+        <SearchProvider>
+          <Header />
 
-        <Header />
 
-        
-        <div className="flex-grow-1">
-          <AppRoutes />
-        </div>
-
+          <div className="flex-grow-1">
+            <AppRoutes />
+          </div>
+          <FullscreenSearch />
+        </SearchProvider>
         <Footer />
       </div>
+      <WhatsAppFloating />
     </>
   )
 }

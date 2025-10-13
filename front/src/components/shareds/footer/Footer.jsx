@@ -11,7 +11,7 @@ function Footer() {
           <Row className="d-flex justify-content-center">
             <Col sm={12} md={6} lg={3} className="p-2">
               <h6 className=" text-uppercase tituloFooter">CERTIFICADO DE GESTIÓN DE CALIDAD</h6>
-              <img src="/img/imgFooter.webp" alt="imagen de certificado de gestión de calidad" loading="lazy" className="imgFooter" height={150} />
+              <img src="/img/imgFooter.webp" alt="imagen de certificado de gestión de calidad" loading="lazy" className="imgFooter img-fluid"  />
             </Col>
             <Col sm={12} md={6} lg={3} className="p-2">
               <h6 className=" text-uppercase tituloFooter">SOLUCIONES</h6>
