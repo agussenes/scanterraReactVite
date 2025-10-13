@@ -5,7 +5,7 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <header className="header-sticky border-bottom">
+    <header className="header border-bottom">
       <nav className="container-fluid p-0">
 
         {/* BLOQUE 1 — TOP BAR */}
@@ -26,7 +26,7 @@ export default function Header() {
         <div className="container-fluid bloque-2 bg-custom-2">
           <div className="container d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between  gap-3 text-center text-sm-start">
             <div className="d-flex align-items-center justify-content-center">
-              <Link>
+              <Link to="/">
                 <img src="/img/logo.webp" alt="Scanterra - Soluciones Satelitales Aplicadas" loading="lazy" className="logo-scanterra" />
               </Link>
             </div>
