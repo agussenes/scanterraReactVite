@@ -1,5 +1,7 @@
 import { Helmet } from "@dr.pogodin/react-helmet";
 import { site } from "./seo/config";
+import { useEffect } from "react";
+import AOS from "aos";
 import AppRoutes from "./router.jsx";
 import GoogleTranslate from "./components/shareds/utils/GoogleTranslate.jsx";
 
@@ -15,6 +17,14 @@ import './App.css'
 
 function App() {
 
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      once: true,
+      easing: "ease-out",
+      offset: 0,
+    });
+  }, []);
 
   return (
     <>
@@ -56,8 +66,6 @@ function App() {
       <div className="d-flex flex-column min-vh-100">
         <SearchProvider>
           <Header />
-
-
           <div className="flex-grow-1">
             <AppRoutes />
           </div>
