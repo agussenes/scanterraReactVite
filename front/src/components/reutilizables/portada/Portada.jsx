@@ -16,6 +16,7 @@ export default function Portada({
   imageDesktop,
   imageMobile,
   title,
+  bajada,
   alt = "Portada",
   overlay = true,
   desktopMinWidth = 992,
@@ -34,6 +35,7 @@ export default function Portada({
       {overlay && (
         <div className="portada-fit__overlay">
           {title && <h1 className="portada-fit__title">{title}</h1>}
+          {bajada && <h3 className="portada-fit__title">{bajada}</h3>}
           {children}
         </div>
       )}

@@ -32,7 +32,7 @@ export default function Header() {
             </div>
             <div className="d-flex align-items-center gap-2 gap-md-3">
               <Link to="/capacitaciones" className="btn btn-primary btn-sm botonCapac text-uppercase rounded-pill bg-celeste fw-semibold py-0">Capacitaciones</Link>
-              <Link to="/clientes" className="btn btn-success btn-sm text-uppercase rounded-pill fw-semibold py-0">Acceso Clientes</Link>
+              <Link to="/acceso-clientes" className="btn btn-success btn-sm text-uppercase rounded-pill fw-semibold py-0">Acceso Clientes</Link>
             </div>
           </div>
         </div>
@@ -62,30 +62,30 @@ export default function Header() {
             variant="dark"
             data-bs-theme="dark"
             className="bg-custom border-top mb-0"
-            expanded={expanded}                 // <-- controlado
-            onToggle={setExpanded}              // <-- toggle hamburguesa
+            expanded={expanded}                 
+            onToggle={setExpanded}              
           >
             <Container>
               <Navbar.Toggle aria-controls="main-nav" />
               <Navbar.Collapse id="main-nav">
                 <Nav className="me-auto">
                   <NavDropdown title="Soluciones" id="dd-soluciones">
-                    <NavDropdown.Item as={NavLink} to="/servicios/agroindustria" onClick={closeMenu}>Agroindustria</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/mineria" onClick={closeMenu}>Minería</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/energia" onClick={closeMenu}>Energía</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/defensa" onClick={closeMenu}>Defensa y Seguridad</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/maritimo" onClick={closeMenu}>Dominio Marítimo</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/servicios/gobierno" onClick={closeMenu}>Gobierno</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/agroindustria" onClick={closeMenu}>Agroindustria</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/mineria" onClick={closeMenu}>Minería</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/energia" onClick={closeMenu}>Energía</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/defensa-y-seguridad" onClick={closeMenu}>Defensa y Seguridad</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/dominio-maritimo" onClick={closeMenu}>Dominio Marítimo</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/gobierno" onClick={closeMenu}>Gobierno</NavDropdown.Item>
                   </NavDropdown>
 
                   <Nav.Link as={NavLink} to="/tecnologia" onClick={closeMenu}>Tecnología</Nav.Link>
 
                   <NavDropdown title="Novedades" id="dd-novedades">
-                    <NavDropdown.Item as={NavLink} to="/novedades/publicaciones" onClick={closeMenu}>Publicaciones</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/novedades/actividades" onClick={closeMenu}>Actividades</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/publicaciones" onClick={closeMenu}>Publicaciones</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/actividades" onClick={closeMenu}>Actividades</NavDropdown.Item>
                   </NavDropdown>
 
-                  <Nav.Link as={NavLink} to="/proyectos" onClick={closeMenu}>Casos de éxito</Nav.Link>
+                  <Nav.Link as={NavLink} to="/casos-de-exito" onClick={closeMenu}>Casos de éxito</Nav.Link>
                   <Nav.Link as={NavLink} to="/nosotros" onClick={closeMenu}>Nosotros</Nav.Link>
                   <Nav.Link as={NavLink} to="/contacto" onClick={closeMenu}>Contacto</Nav.Link>
                 </Nav>

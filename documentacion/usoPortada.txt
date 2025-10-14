@@ -1,9 +1,10 @@
-import Portada from "@/components/common/Portada";
+import Portada from "@/components/reutilizables/portada/Portada.jsx";
 
 // Con overlay + título
 <Portada
   title="Soluciones GeoEspaciales"
-  imageDesktop="/img/portada-desktop.webp"
+  bajada="bajada si se necesita"
+  imageDesktop="/img/portada-desktop.webp" <-- Tambien se usa pasando imagen por variable
   imageMobile="/img/portada-mobile.webp"
 />
 
