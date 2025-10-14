@@ -17,27 +17,28 @@ function Footer() {
               <h6 className=" text-uppercase tituloFooter">SOLUCIONES</h6>
 
               <ul className="list-unstyled ">
-                <li ><Link to="" className="text-decoration-none linksFooter">Agroindustria</Link></li>
-                <li><Link to="" className="text-decoration-none linksFooter">Minería</Link></li>
-                <li><Link to="" className="text-decoration-none linksFooter">Energía</Link></li>
-                <li><Link to="" className="text-decoration-none linksFooter">Defensa y Seguridad</Link></li>
-                <li><Link to="" className="text-decoration-none linksFooter">Dominio Marítimo</Link></li>
-                <li><Link to="" className="text-decoration-none linksFooter">Gobierno</Link></li>
+                <li ><Link to="/agroindustria" className="text-decoration-none linksFooter">Agroindustria</Link></li>
+                <li><Link to="/mineria" className="text-decoration-none linksFooter">Minería</Link></li>
+                <li><Link to="/energia" className="text-decoration-none linksFooter">Energía</Link></li>
+                <li><Link to="/defensa-y-seguridad" className="text-decoration-none linksFooter">Defensa y Seguridad</Link></li>
+                <li><Link to="/dominio-maritimo" className="text-decoration-none linksFooter">Dominio Marítimo</Link></li>
+                <li><Link to="/gobierno" className="text-decoration-none linksFooter">Gobierno</Link></li>
               </ul>
 
             </Col>
             <Col sm={12} md={6} lg={3} className="p-2">
               <h6 className=" text-uppercase tituloFooter">RED DE ASESORES</h6>
               <ul className="list-unstyled " >
-                <li ><Link to="" className="text-decoration-none linksFooter">Ponete en contacto.</Link></li>
-                <li><Link to="" className="text-decoration-none linksFooter">Estamos en diferentes puntos del mundo.</Link></li>
+                <li ><Link to="/red-de-asesores" className="text-decoration-none linksFooter">Ponete en contacto.</Link></li>
+                <li><Link to="/red-de-asesores" className="text-decoration-none linksFooter">Estamos en diferentes puntos del mundo.</Link></li>
               </ul>
             </Col>
             <Col sm={12} md={6} lg={3} className="p-2">
-              <h6 className=" text-uppercase tituloFooter">OFICINA ARGENTINA</h6>
+              <h6 className=" text-uppercase  tituloFooter">OFICINA ARGENTINA</h6>
               <ul className="list-unstyled " >
-                <li ><Link to="" className="text-decoration-none linksFooter">Ponete en contacto.</Link></li>
-                <li><Link to="" className="text-decoration-none linksFooter">Estamos en diferentes puntos del mundo.</Link></li>
+                <li className="color-font fw-semibold"><small>Fitz Roy 1875 – 7° A CP C1414CIA. – Capital Federal. Argentina.</small></li>
+                <li ><a href="mailto:info@scanterra.com" className="text-decoration-none linksFooter">info@scanterra.com</a></li>
+                <li><Link to="tel:+5491156474793" className="text-decoration-none linksFooter">+549 11 5647 4793</Link></li>
               </ul>
               <h6 className=" text-uppercase tituloFooter">OFICINA URUGUAY</h6>
               <ul className="list-unstyled color-font" >
