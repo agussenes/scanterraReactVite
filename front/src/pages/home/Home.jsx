@@ -4,7 +4,8 @@ import Seo from '../../seo/Seo';
 // componentes UI 
 import Portada from '../../components/reutilizables/portada/Portada';
 import MapaCounter from '../../components/sections/home/mapaCounter/MapaCounter';
-
+import EspecialistasGestion from '../../components/sections/home/especialistasGestion/EspecialistasGestion';
+import BannerAgroindustria from '../../components/sections/home/bannerAgroindustria/BannerAgroindustria';
 
 // imagenes
 import imgPortada from '../../assets/img/portadas/portadaHome.webp';
@@ -41,6 +42,10 @@ function Home() {
             />
 
             <MapaCounter />
+
+            <EspecialistasGestion />
+
+            <BannerAgroindustria />
 
         </>
     )

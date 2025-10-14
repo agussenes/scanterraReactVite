@@ -26,7 +26,7 @@ function useInViewOnce(options = { threshold: 0.2 }) {
     return [ref, inView];
 }
 
-// Cuenta de 0 a target en "duration" ms cuando start=true
+
 function useCountUp(target = 0, duration = 1200, start = false) {
     const [value, setValue] = useState(0);
     useEffect(() => {
