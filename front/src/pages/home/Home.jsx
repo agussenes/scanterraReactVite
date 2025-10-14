@@ -36,6 +36,7 @@ function Home() {
                 imageDesktop={imgPortada}
                 imageMobile={imgPortadaMobile}
                 overlay={false}
+
             />
 
         </>

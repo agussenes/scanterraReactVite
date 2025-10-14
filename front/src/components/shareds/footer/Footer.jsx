@@ -57,9 +57,9 @@ function Footer() {
           <Row className="d-flex justify-content-center">
             <Col lg={12}>
               <ul className="list-unstyled d-flex gap-4 justify-content-center ">
-                <li ><Link to="" className="text-decoration-none linksFooterW"><small>Política de privacidad</small></Link></li>
+                <li ><Link to="/politica-de-privacidad" className="text-decoration-none linksFooterW"><small>Política de privacidad</small></Link></li>
                 <li className="text-decoration-none linksFooterW">|</li>
-                <li><Link to="" className="text-decoration-none linksFooterW"><small>Términos de uso</small></Link></li>
+                <li><Link to="/terminos-de-uso" className="text-decoration-none linksFooterW"><small>Términos de uso</small></Link></li>
 
               </ul>
               <hr className="border  border-white opacity-50 " />
