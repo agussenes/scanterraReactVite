@@ -3,6 +3,8 @@ import Seo from '../../seo/Seo';
 
 // componentes UI 
 import Portada from '../../components/reutilizables/portada/Portada';
+import MapaCounter from '../../components/sections/home/mapaCounter/MapaCounter';
+
 
 // imagenes
 import imgPortada from '../../assets/img/portadas/portadaHome.webp';
@@ -36,8 +38,9 @@ function Home() {
                 imageDesktop={imgPortada}
                 imageMobile={imgPortadaMobile}
                 overlay={false}
-
             />
+
+            <MapaCounter />
 
         </>
     )

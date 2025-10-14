@@ -1,0 +1,61 @@
+.contenedorTituloMapa {}
+
+.lineMapCounter {
+    width: 150px;
+    border: 1px solid #102690;
+    margin-top: 1rem;
+}
+
+.textoMapa {}
+
+.textoMapa ul li {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.textoMapa p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.mc-counter .mc-number {
+    color: #132C4A;
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.mc-counter .mc-label {
+    color: #274a67;
+    font-size: .8rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
+
+.mc-underline {
+    width: 64px;
+    height: 3px;
+    background: #132C4A;
+    border-radius: 2px;
+    margin-top: .35rem;
+}
+
+/* responsivo suave ya lo maneja el grid: xs=6 (2 por fila), md=3 (4 por fila) */
+
+
+@media (max-width: 768px) {
+
+    .textoMapa {
+        margin-top: 3rem;
+    }
+
+    .mc-counter .mc-number {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 567px) {
+    
+}
