@@ -57,6 +57,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color:#DFF2FE ;
 }
 
+.bg-celeste{
+  background-color: #009AD5 !important;
+}
+
 .color-font{
   color: #132C4A;
 }

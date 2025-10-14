@@ -61,6 +61,16 @@
     text-decoration: none;
 }
 
+.botonCapac{
+    border: 1px solid #009AD5;
+    transition: all 0.3s ease-in-out;
+}
+
+.botonCapac:hover{
+    border: 1px solid #009AD5;
+    background-color: #0284b8 !important;
+}
+
 /* ===== Navbar dark: texto SIEMPRE blanco ===== */
 .navbar[data-bs-theme="dark"] .nav-link,
 .navbar[data-bs-theme="dark"] .navbar-nav .nav-link,
@@ -127,7 +137,6 @@
 .navbar .dropdown-item.active {
     background: var(--scan-azul-claro);
     color: #0b2138;
-    /* contraste sobre celeste claro */
     font-weight: 700;
 }
 

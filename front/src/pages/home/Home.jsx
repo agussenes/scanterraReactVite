@@ -1,6 +1,14 @@
 import React from 'react'
 import Seo from '../../seo/Seo';
 
+// componentes UI 
+import Portada from '../../components/reutilizables/portada/Portada';
+
+// imagenes
+import imgPortada from '../../assets/img/portadas/portadaHome.webp';
+import imgPortadaMobile from '../../assets/img/portadas/portadaHomeMobile.webp';
+
+
 function Home() {
     return (
         <>
@@ -23,8 +31,13 @@ function Home() {
                     }
                 }}
             />
+            <Portada
+                title=""
+                imageDesktop={imgPortada}
+                imageMobile={imgPortadaMobile}
+                overlay={false}
+            />
 
-            hola
         </>
     )
 }

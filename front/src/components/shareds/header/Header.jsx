@@ -20,7 +20,7 @@ export default function Header() {
   const closeMenu = () => setExpanded(false);
 
   return (
-    <header className="header border-bottom">
+    <header className="header ">
       <nav className="container-fluid p-0">
 
         {/* BLOQUE 1 — TOP BAR */}
@@ -31,7 +31,7 @@ export default function Header() {
               <p className="m-0"><a href="mailto:info@scanterra.com" className="color-font text-decoration-none">info@scanterra.com</a></p>
             </div>
             <div className="d-flex align-items-center gap-2 gap-md-3">
-              <Link to="/capacitaciones" className="btn btn-primary btn-sm text-uppercase rounded-pill fw-semibold py-0">Capacitaciones</Link>
+              <Link to="/capacitaciones" className="btn btn-primary btn-sm botonCapac text-uppercase rounded-pill bg-celeste fw-semibold py-0">Capacitaciones</Link>
               <Link to="/clientes" className="btn btn-success btn-sm text-uppercase rounded-pill fw-semibold py-0">Acceso Clientes</Link>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function Header() {
             expand="lg"
             variant="dark"
             data-bs-theme="dark"
-            className="bg-custom border-top border-bottom"
+            className="bg-custom border-top mb-0"
             expanded={expanded}                 // <-- controlado
             onToggle={setExpanded}              // <-- toggle hamburguesa
           >

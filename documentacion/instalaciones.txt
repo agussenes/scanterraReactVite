@@ -16,3 +16,6 @@ El Front se creo usando:
 
     - # Animaciones (CSS + on-scroll)
     npm i animate.css aos
+
+    - # Libreria para buscador tipo wordpress
+    npm i minisearch
