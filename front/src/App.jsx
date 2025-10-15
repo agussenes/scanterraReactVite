@@ -63,7 +63,7 @@ function App() {
       </Helmet>
       <GoogleTranslate />
       <ScrollToTop />
-      <div className="d-flex flex-column min-vh-100">
+      <div className="d-flex flex-column min-vh-100 contenedorApp">
         <SearchProvider>
           <Header />
           <div className="flex-grow-1">

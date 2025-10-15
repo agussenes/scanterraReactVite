@@ -1,0 +1,27 @@
+.btn-Cards {
+    color: #f1f1f1;
+    background-color: #2B4059;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease-in;
+}
+
+.btn-Cards:hover {
+    color: #f1f1f1;
+    background-color: #2B4059;
+    transform: scale(1.02);
+    font-size: 0.9rem !important;
+
+}
+
+.tituloCards {
+    font-size: 1.2rem;
+}
+
+@media (max-width:768px) {
+
+    .contenedorBannerImagen img{
+        object-fit: contain !important;
+    }
+    
+}

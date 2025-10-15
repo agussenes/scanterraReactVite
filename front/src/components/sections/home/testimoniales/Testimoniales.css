@@ -1,0 +1,84 @@
+
+/* Contenido del slide */
+.testi-slide{
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  padding: clamp(16px, 2vw, 32px);
+  color: #3a3a3a;
+}
+
+.testi-quote{
+  font-size: 8rem;
+  line-height: 1;
+  color: #FFC425;        
+  font-weight: 800;
+
+}
+
+.testi-text{
+  font-size: clamp(18px, 2.2vw, 28px);
+  line-height: 1.55;
+  margin: 0 auto 18px;
+  letter-spacing: .2px;
+}
+
+.testi-author{
+  font-size: clamp(12px, 1.4vw, 14px);
+  letter-spacing: 1px;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.testi-swiper .swiper-button-prev,
+.testi-swiper .swiper-button-next{
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  background: #ffffff23;
+  border: 1px solid rgba(0,0,0,.12);
+  box-shadow: 0 4px 16px rgba(0,0,0,.06);
+  color: #9aa0a6;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .testi-swiper .swiper-button-prev{
+    left: -10px;
+}
+
+.testi-swiper .swiper-button-next{
+    right: -10px;
+}
+    
+}
+
+.testi-swiper .swiper-button-prev::after,
+.testi-swiper .swiper-button-next::after{
+  font-size: 20px;              
+  font-weight: 700;
+}
+
+/* Centrar verticalmente los botones dentro del carrusel */
+.testi-swiper .swiper-button-prev,
+.testi-swiper .swiper-button-next{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Paginação discreta */
+.testi-swiper .swiper-pagination-bullet{
+  width: 8px; height: 8px;
+  background: rgba(0,0,0,.25);
+  opacity: 1;
+}
+.testi-swiper .swiper-pagination-bullet-active{
+  background: #FFC425;
+}
+
+/* Responsive: botones más chicos en mobile y ocultar si estorban */
+@media (max-width: 576px){
+  .testi-swiper .swiper-button-prev,
+  .testi-swiper .swiper-button-next{ width: 44px; height: 44px; }
+}

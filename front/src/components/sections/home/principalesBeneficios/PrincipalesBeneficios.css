@@ -1,0 +1,38 @@
+
+.contenedorUl{
+    margin-top: -0.5rem !important;
+    
+}
+
+.contenedorContainer{
+    margin-left: 7rem;
+    
+}
+
+.contenedorContainer2{
+    margin-right: 7rem;
+}
+
+.contenedorMaxUl{
+    max-width: 500px;
+
+}
+
+.contenedorMaxUl li{
+  font-size: 18px !important;
+
+}
+
+@media (max-width: 768px) {
+    
+.contenedorContainer{
+    margin-left: 0rem;
+}
+
+.contenedorContainer2{
+    margin-right: 0rem;
+
+}
+
+
+}

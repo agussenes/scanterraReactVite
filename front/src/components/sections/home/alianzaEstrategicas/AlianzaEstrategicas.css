@@ -1,0 +1,40 @@
+.alianza-col { display: flex; }
+
+.alianza-card{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;   /* <— clave */
+  justify-content: flex-end;/* <— pega ABAJO */
+  align-items: center;      /* <— centra en X */
+  padding: 16px;
+  border-radius: 16px;
+  background: #EAF6FF1A;
+  overflow: hidden;
+  min-height: 160px;
+}
+
+.alianza-card img{
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: grayscale(10%);
+  opacity: .95;
+  transition: filter .2s, opacity .2s, transform .3s;
+}
+
+.alianza-card:hover img{
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+
+    .alianza-card img{
+        height: 60px !important;
+    }
+    
+}
