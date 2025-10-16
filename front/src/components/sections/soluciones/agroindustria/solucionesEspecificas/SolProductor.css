@@ -1,0 +1,46 @@
+
+.contenedorSoluciones img{
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedorImGTxtImg{
+    width: 325px !important;
+}
+
+.icono{
+  width: 100%;
+  max-width: 140px;   
+  height: auto;
+}
+
+.hrCustom{
+    border-bottom: 2px dashed #132C4A;
+}
+
+.centrarMobile{}
+
+.fontSoluciones{
+    font-size: 20px !important;
+}
+
+
+
+@media (min-width: 992px){
+  .contenedorSoluciones { padding-left: .25rem; }
+}
+
+
+@media (max-width: 991px){
+  .contenedorSoluciones { margin-top: .25rem; }
+}
+
+@media (max-width:768px) {
+
+    .centrarMobile{
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+    }
+    
+}

@@ -24,7 +24,7 @@ function BannerAgroindustria() {
                             <h1 className="text-white fw-bold m-0 mt-2">Agroindustria</h1>
                             <h4 style={{ maxWidth: '1000px', color: 'white' }} className='textoBanner'>Contamos con una completa suite de soluciones geoespaciales aplicadas
                                 y que desarrollamos a partir de las necesidades reales de cada cliente
-                                que se dedica a la producción de campo..</h4>
+                                que se dedica a la producción de campo.</h4>
                         </div>
                     </div>
                 </Container>

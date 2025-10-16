@@ -132,6 +132,19 @@ ul li {
   border-bottom: 1px solid #132C4A;
 }
 
+.ocultarEnPc{
+  display: none !important;
+}
+
+@media (max-width:768px) {
+  .ocultarEnMobile{
+    display: none !important;
+  }
+  .ocultarEnPc{
+    display: block !important;
+  }
+  
+}
 
 
 @media (max-width:490px) {
