@@ -25,7 +25,7 @@ const DATA = [
 
 export default function Testimoniales() {
     return (
-        <section className="container-fluid py-4 px-0">
+        <section className="container-fluid pt-4 px-0">
             <Container>
                 <h2 className="text-center color-font fw-bold mb-4">TESTIMONIALES</h2>
             </Container>

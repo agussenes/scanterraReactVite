@@ -44,12 +44,13 @@
     left: 0;
     right: 0;
     bottom: -6px;
-    height: 3px;
+    height: 2px;
     background: transparent;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .25s ease, background-color .25s ease;
     border-radius: 2px;
+    margin-bottom: 1rem;
 }
 
 .clientes-tabs .nav-link.active::after {

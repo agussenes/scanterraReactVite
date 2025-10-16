@@ -1,0 +1,72 @@
+.contenedorBannerHR {
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedorBannerHR img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorBannerHR::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.overlayBanner {
+    position: absolute;
+    inset: 0;
+    padding: auto 1rem 1rem 1rem;
+    z-index: 2;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.overlayBanner p{
+    width: 45%;
+}
+
+
+
+.imgMobile {
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+     .overlayBanner p{
+        width: 90%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .imgMobile {
+        display: block !important;
+    }
+
+    .imgPC {
+        display: none !important;
+    }
+
+    .overlayBanner {
+        padding-top: 1rem;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .overlayBanner p{
+        width: 100%;
+    }
+
+}

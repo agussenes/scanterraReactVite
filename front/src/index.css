@@ -125,6 +125,8 @@ ul li {
   transform: scale(1.02);
   background-color: #01014b;
   color: #EAF6FE;
+  border: 1px solid #EAF6FE;
+
 }
 
 
