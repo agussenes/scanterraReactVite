@@ -1,0 +1,65 @@
+import GallerySwiper from "@/components/reutilizables/gallery-swiper/GallerySwiper.jsx";
+
+// Miniaturas en carrusel: 4 por fila (desktop). Se activa el carrusel
+// automáticamente si hay más de 4 ítems. Con lightbox y navegación.
+<GallerySwiper
+  items={[
+    { src: "/img/uno.webp", alt: "NDVI — Lote 1", caption: "Lote 1 · NDVI" },
+    { src: "/img/dos.webp", alt: "Humedad",        caption: "Mapa de humedad" },
+    { src: "/img/tres.webp", alt: "Riesgo",        caption: "Riesgo de anegamiento" },
+    { src: "/img/cuatro.webp", alt: "Elevación",   caption: "Modelo de elevación" },
+    { src: "/img/cinco.webp", alt: "Índice",       caption: "Índice de productividad" },
+  ]}
+  perRow={4}
+/>
+
+Solo grilla (sin carrusel)
+// Como hay SOLO 4 ítems y perRow=4 => grilla estática responsiva
+<GallerySwiper items={imagenes.slice(0,4)} perRow={4} />
+
+
+Forzar carrusel / Cambiar cantidad por fila
+// 5 por fila; con 8 ítems se activa carrusel + flechas + bullets
+<GallerySwiper items={imagenes} perRow={5} />
+
+
+// Sin lightbox y sin loop. Ideal para carruseles “vistazo rápido”
+<GallerySwiper items={imagenes} perRow={4} lightbox={false} loop={false} />
+
+<GallerySwiper
+  items={[
+    { src: "/img/a.webp", alt: "Foto A" },
+    { src: "/img/b.webp", alt: "Foto B", caption: "Detalle zona sur" },
+  ]}
+  perRow={4}
+/>
+
+
+<GallerySwiper
+  items={imagenes}
+  perRow={5}
+  breakpoints={{
+    0:   { slidesPerView: 1.2, spaceBetween: 8 },
+    576: { slidesPerView: 2,   spaceBetween: 12 },
+    768: { slidesPerView: 3,   spaceBetween: 16 },
+    992: { slidesPerView: 5,   spaceBetween: 20 },
+  }}
+/>
+
+
+Props
+Prop	Tipo	Default	Descripción
+items	{ src: string; alt?: string; caption?: string }[]	(req.)	Array de imágenes. alt y caption son opcionales.
+perRow	number	4	Cantidad de miniaturas por fila en desktop. Si items.length > perRow, se activa el carrusel.
+lightbox	boolean	true	Habilita vista a pantalla completa con flechas y bullets.
+loop	boolean	true	El carrusel vuelve al inicio al terminar.
+breakpoints	Record<number, { slidesPerView:number; spaceBetween:number }>	(auto)	Config Swiper por ancho (override).
+className	string	""	Clases extra para el wrapper del componente.
+
+Estructura de datos recomendada
+const imagenes = [
+  { src: {variable},   alt: "Parcela 1 — NDVI", caption: "NDVI · Agosto 2025" },
+  { src: {variable},   alt: "Humedad de suelo" },
+  { src: {variable},  alt: "Riesgo de anegamiento", caption: "Zona baja" },
+  // ...
+];

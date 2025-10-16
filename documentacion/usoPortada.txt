@@ -13,21 +13,6 @@ import Portada from "@/components/reutilizables/portada/Portada.jsx";
   overlay={false}
   imageDesktop="/img/portada-desktop.webp"
   imageMobile="/img/portada-mobile.webp"
-  height="70svh" // opcional
+  
 />
 
-// Si tu header sticky ocupa alto fijo:
-<Portada
-  title="Tecnología"
-  imageDesktop="/img/tec-desktop.webp"
-  imageMobile="/img/tec-mobile.webp"
-  height="calc(100svh - 140px)"
-/>
-
-// Si querés que la versión desktop entre antes (por ejemplo desde 1200px):
-<Portada
-  title="Gobierno"
-  imageDesktop="/img/gob-desktop.webp"
-  imageMobile="/img/gob-mobile.webp"
-  desktopMinWidth={1200}
-/>
