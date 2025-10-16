@@ -1,9 +1,9 @@
 .contenedorBannerImagen {}
 
- .textoBanner {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+.textoBanner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
 @media (max-width:991px) {
     .textoBanner {
@@ -16,21 +16,23 @@
 
 @media (max-width:767px) {
 
+
+
     .contenedorGeneral {
         padding: 0px;
         margin: 0px;
     }
 
     .contenedorBannerImagen {
-        object-fit: cover !important;
+        background-image: url('../../../../assets/img/home/bannerAgroindustria/imgBannerAgro.webp');
+        background-position: center center;
         padding: 0px;
         margin: 0px;
+        height: 400px;
     }
 
     .contenedorBannerImagen img {
-        object-fit: cover !important;
-
-        height: 400px;
+        display: none !important;
     }
 
     .textoBanner {
