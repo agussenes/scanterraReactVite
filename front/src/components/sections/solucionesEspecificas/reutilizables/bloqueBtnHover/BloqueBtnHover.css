@@ -1,0 +1,53 @@
+.contenedorBloqueBtnHover {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.contenedorBloqueBtnHover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    /* invisible por defecto */
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+/* hover: oscurece y hace zoom */
+.contenedorBloqueBtnHover:hover {
+    transform: scale(1.06);
+    filter: brightness(0.9);
+}
+
+.contenedorBloqueBtnHover:hover::after {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* link interno centrado */
+.overlay-link {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.contenedorBloqueBtnHover:hover .overlay-link {
+    opacity: 1;
+}
+
+
+.sectionContenedorBtnHover {
+    overflow: hidden;
+}

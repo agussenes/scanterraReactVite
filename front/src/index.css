@@ -103,7 +103,7 @@ ul li {
   background-color: #EAF6FE;
 }
 
-.bg-gris-oscuro{
+.bg-gris-oscuro {
   background-color: #E5E5E5;
 }
 
@@ -136,18 +136,37 @@ ul li {
   border-bottom: 1px solid #132C4A;
 }
 
-.ocultarEnPc{
+.ocultarEnPc {
   display: none !important;
 }
 
+
+/* estilo de ul con ticks  */
+
+.tick-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: .5rem;
+}
+
+.tick-list i {
+  margin-top: .25rem;
+  font-size: 1.1rem;
+}
+
+
+
+/* responsive  */
+
 @media (max-width:768px) {
-  .ocultarEnMobile{
+  .ocultarEnMobile {
     display: none !important;
   }
-  .ocultarEnPc{
+
+  .ocultarEnPc {
     display: block !important;
   }
-  
+
 }
 
 

@@ -14,6 +14,8 @@ import Gobierno from './pages/soluciones/Gobierno.jsx';
 
 // Soluciones Especificas 
 import ScanAgroEmpresa from './pages/solucionesEspecificas/ScanAgroEmpresa.jsx';
+import ScanSeguros from './pages/solucionesEspecificas/ScanSeguros.jsx';
+import ScanRegional from './pages/solucionesEspecificas/ScanRegional.jsx';
 
 
 // Pagina error 404 
@@ -40,6 +42,8 @@ function Router() {
 
         {/* Soluciones Especificas  */}
         <Route path='/scanagroempresa' element={<ScanAgroEmpresa />} />
+        <Route path='/scanseguros' element={<ScanSeguros />} />
+        <Route path='/scanregional' element={<ScanRegional />} />
 
         {/* Legales  */}
         <Route path='/politica-de-privacidad' element={<PoliticaPrivacidad />} />
