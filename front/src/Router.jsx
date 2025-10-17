@@ -1,14 +1,25 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 
-// vistas 
+// Vistas 
 import Home from './pages/home/Home';
+
+// soluciones 
 import Agroindustria from './pages/soluciones/Agroindustria.jsx';
 import Mineria from './pages/soluciones/Mineria.jsx';
+import Energia from './pages/soluciones/Energia.jsx';
+import DefensaSeguridad from './pages/soluciones/DefensaSeguridad.jsx';
+import DominioMaritimo from './pages/soluciones/DominioMaritimo.jsx';
+import Gobierno from './pages/soluciones/Gobierno.jsx';
 
-// page error 
+// Soluciones Especificas 
+import ScanAgroEmpresa from './pages/solucionesEspecificas/ScanAgroEmpresa.jsx';
+
+
+// Pagina error 404 
 import NotFound from './pages/notFound/NotFound';
-// legales 
+
+// Pagina legales 
 import PoliticaPrivacidad from './pages/legales/PoliticaPrivacidad';
 import TerminoUsos from './pages/legales/TerminoUsos.jsx'
 
@@ -22,6 +33,13 @@ function Router() {
         {/* Soluciones  */}
         <Route path='/agroindustria' element={<Agroindustria />} />
         <Route path='/mineria' element={<Mineria />} />
+        <Route path='/energia' element={<Energia />} />
+        <Route path='/defensa-y-seguridad' element={<DefensaSeguridad />} />
+        <Route path='/dominio-maritimo' element={<DominioMaritimo />} />
+        <Route path='/gobierno' element={<Gobierno />} />
+
+        {/* Soluciones Especificas  */}
+        <Route path='/scanagroempresa' element={<ScanAgroEmpresa />} />
 
         {/* Legales  */}
         <Route path='/politica-de-privacidad' element={<PoliticaPrivacidad />} />
@@ -29,6 +47,7 @@ function Router() {
 
         {/* Not found  */}
         <Route path="*" element={ <NotFound/> } />
+
       </Routes>
     </>
   )

@@ -18,9 +18,20 @@
     font-size: 18px !important;
 }
 
+@media (max-width:1240px) {
+    .contenedorContainer {
+        margin-left: 1rem !important;
+    }
+}
+
 @media (max-width:991px) {
     .contenedorContainer2 {
-        margin-left: 7rem;
+        margin-left: 7rem !important;
+    }
+
+    .contenedorContainer{
+        margin-left: 7rem !important;
+
     }
 
 }
@@ -28,16 +39,16 @@
 @media (max-width: 768px) {
 
     .contenedorContainer {
-        margin-left: 0rem;
+        margin-left: 0rem !important;
     }
 
     .contenedorContainer2 {
-        margin-right: 0rem;
+        margin-right: 0rem !important;
 
     }
 
     .contenedorContainer2 {
-        margin-left: 0rem;
+        margin-left: 0rem !important;
     }
 
 }

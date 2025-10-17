@@ -35,10 +35,10 @@ export default function GallerySwiper({
     const bp = useMemo(
         () =>
             breakpoints ?? {
-                0: { slidesPerView: 1, spaceBetween: 12 },   // mobile
-                576: { slidesPerView: 1, spaceBetween: 12 },   // (opcional: 2 si querés en sm)
-                768: { slidesPerView: 3, spaceBetween: 16 },   // tablet
-                992: { slidesPerView: perRow, spaceBetween: 18 }, // desktop: 4 o 5
+                0: { slidesPerView: 1, spaceBetween: 12 },   
+                576: { slidesPerView: 1, spaceBetween: 12 },   
+                768: { slidesPerView: 3, spaceBetween: 16 },   
+                992: { slidesPerView: perRow, spaceBetween: 18 }, 
             },
         [breakpoints, perRow]
     );
@@ -48,7 +48,6 @@ export default function GallerySwiper({
     useEffect(() => {
         const calc = () => {
             const w = window.innerWidth;
-            // Encontrar el mayor breakpoint <= w
             const keys = Object.keys(bp).map(k => Number(k)).sort((a, b) => a - b);
             let found = bp[0];
             for (const k of keys) if (w >= k) found = bp[k];

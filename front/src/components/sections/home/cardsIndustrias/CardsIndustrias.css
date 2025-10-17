@@ -20,7 +20,7 @@
 
 @media (max-width:768px) {
 
-    .contenedorBannerImagen img{
+    .contenedorBannerImagenCards img{
         object-fit: contain !important;
     }
     

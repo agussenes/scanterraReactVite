@@ -41,7 +41,7 @@ function Mineria() {
                 jsonld={{
                     "@context": "https://schema.org",
                     "@type": "WebSite",
-                    name: "Mi Sitio",
+                    name: "Scanterra - Soluciones Satelitales Aplicadas",
                     url: "https://scanterra.com/mineria",
                     potentialAction: {
                         "@type": "SearchAction",

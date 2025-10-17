@@ -26,7 +26,7 @@ export default function CardsIndustrias() {
                 <Row xs={1} sm={2} md={3} lg={5} className="g-3 justify-content-center">
                     {items.map(({ img, titulo, link }, i) => (
                         <Col key={i}>
-                            <div className="position-relative contenedorBannerImagen">
+                            <div className="position-relative contenedorBannerImagenCards">
                                 <img src={img} alt={titulo} className="w-100 d-block" />
 
                                 {/* overlay */}
