@@ -51,7 +51,7 @@ function ScanRegional() {
                     "@context": "https://schema.org",
                     "@type": "WebSite",
                     name: "Scanterra - Soluciones Satelitales Aplicadas",
-                    url: "https://scanterra.com/scanseguros",
+                    url: "https://scanterra.com/scanregional",
                     potentialAction: {
                         "@type": "SearchAction",
                         target: "https://scanterra.com/search?q={search_term_string}",
