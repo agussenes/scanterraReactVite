@@ -23,7 +23,7 @@ function TabsSolEs({ tabPrincipal, img1, img2, titulo1, titulo2, bajada1, bajada
                         <Tab eventKey={'principal'} title={tabPrincipal}>
                             <Container>
                                 <Row className='align-items-center'>
-                                    <Col lg={6} md={12} className='d-flex align-items-center flex-column'>
+                                    <Col lg={6} md={12} className='d-flex align-items-center flex-column contenedorImgTabs'>
                                         <img src={img1} alt={titulo1} loading='lazy' className='img-fluid' />
                                     </Col>
                                     <Col lg={6} md={12}>
@@ -42,7 +42,7 @@ function TabsSolEs({ tabPrincipal, img1, img2, titulo1, titulo2, bajada1, bajada
                             <Tab eventKey={"mas-info"} title="Más Info">
                                 <Container>
                                     <Row className='align-items-center'>
-                                        <Col lg={6} md={12}>
+                                        <Col lg={6} md={12} className='contenedorImgTabs'>
                                             <img src={img2} alt={titulo2} loading='lazy' className='img-fluid' />
                                         </Col>
                                         <Col lg={6} md={12} className='d-flex flex-column '>

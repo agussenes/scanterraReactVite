@@ -103,8 +103,8 @@ function ScanProductividad() {
                 img2={imgB2}
                 img3={imgB3}
                 url1='/scancontrol'
-                url2='/scangeogestion'
-                url3='/scanrelevamiento'
+                url2='/scanrelevamiento'
+                url3='/scangeogestion'
             />
 
 

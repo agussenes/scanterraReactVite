@@ -97,6 +97,10 @@
   mask-image: linear-gradient(90deg, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
 }
 
+.contenedorImgTabs img{
+  max-height: 400px !important;
+}
+
 
 @media (prefers-color-scheme: dark) {
     :root {

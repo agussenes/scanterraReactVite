@@ -155,6 +155,19 @@ ul li {
 }
 
 
+/* peso fuente  */
+
+.boldFuerte{
+  font-weight: 900;
+}
+
+/* estilo fuente  */
+
+.italic{
+  font-style: italic;
+}
+
+
 
 /* responsive  */
 

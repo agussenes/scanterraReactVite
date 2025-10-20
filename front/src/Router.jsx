@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // Vistas 
 import Home from './pages/home/Home';
+import Tecnologia from './pages/tecnologia/Tecnologia.jsx';
 
 // soluciones 
 import Agroindustria from './pages/soluciones/Agroindustria.jsx';
@@ -17,6 +18,10 @@ import ScanAgroEmpresa from './pages/solucionesEspecificas/ScanAgroEmpresa.jsx';
 import ScanSeguros from './pages/solucionesEspecificas/ScanSeguros.jsx';
 import ScanRegional from './pages/solucionesEspecificas/ScanRegional.jsx';
 import ScanProductividad from './pages/solucionesEspecificas/ScanProductividad.jsx';
+import ScanRiesgo from './pages/solucionesEspecificas/ScanRiesgo.jsx';
+import ScanControl from './pages/solucionesEspecificas/ScanControl.jsx';
+import ScanRelevamiento from './pages/solucionesEspecificas/ScanRelevamiento.jsx';
+import ScanGeogestion from './pages/solucionesEspecificas/ScanGeogestion.jsx';
 
 // Pagina error 404 
 import NotFound from './pages/notFound/NotFound';
@@ -31,6 +36,7 @@ function Router() {
       <Routes>
           {/* Routes UI general  */}
         <Route path="/" element={ <Home/> } />
+        <Route path='/tecnologia' element={<Tecnologia />} />
 
         {/* Soluciones  */}
         <Route path='/agroindustria' element={<Agroindustria />} />
@@ -45,6 +51,10 @@ function Router() {
         <Route path='/scanseguros' element={<ScanSeguros />} />
         <Route path='/scanregional' element={<ScanRegional />} />
         <Route path='/scanproductividad' element={<ScanProductividad />} />
+        <Route path='/scanriesgo' element={<ScanRiesgo />} />
+        <Route path='/scancontrol' element={<ScanControl />} />
+        <Route path='/scanrelevamiento' element={<ScanRelevamiento />} />
+        <Route path='/scangeogestion' element={<ScanGeogestion />} />
 
         {/* Legales  */}
         <Route path='/politica-de-privacidad' element={<PoliticaPrivacidad />} />
