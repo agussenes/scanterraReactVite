@@ -8,6 +8,7 @@ import QueHacemos from '../../components/sections/tecnologia/QueHacemos/QueHacem
 import Hr from '../../components/reutilizables/hr/Hr';
 import GeoPlataforma from '../../components/sections/tecnologia/geoplataforma/GeoPlataforma';
 import ScanterraApi from '../../components/sections/tecnologia/api/ScanterraApi';
+import ScanterraSatelital from '../../components/sections/tecnologia/satelital/ScanterraSatelital';
 
 // imagenes
 import imgPortada from '../../assets/img/portadas/portadaTecnologia.webp';
@@ -46,6 +47,9 @@ function Tecnologia() {
             <GeoPlataforma />
             <Hr />
             <ScanterraApi />
+            <Hr />
+            <ScanterraSatelital />
+
 
         </>
     )
