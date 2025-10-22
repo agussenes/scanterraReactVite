@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 // Vistas 
 import Home from './pages/home/Home';
 import Tecnologia from './pages/tecnologia/Tecnologia.jsx';
+import CasosDeExito from './pages/casosDeExito/CasosDeExito.jsx';
 
 // soluciones 
 import Agroindustria from './pages/soluciones/Agroindustria.jsx';
@@ -37,6 +38,7 @@ function Router() {
           {/* Routes UI general  */}
         <Route path="/" element={ <Home/> } />
         <Route path='/tecnologia' element={<Tecnologia />} />
+        <Route path='/casos-de-exito' element={<CasosDeExito />} />
 
         {/* Soluciones  */}
         <Route path='/agroindustria' element={<Agroindustria />} />
